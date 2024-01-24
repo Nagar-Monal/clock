@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: #070505;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30vh;
+        width: 100%;
+      }
+      #box {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+      }
+      h1 {
+        padding-bottom: 2rem;
+        color: #4b8b4b;
+      }
+      #box {
+        background-color: #070505;
+        color: #2ad4f2;
+        font-size: 2.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 27rem;
+        height: 18vh;
+        font-family: sans-serif;
+
+        box-shadow: -1px -1px 2px 0px #0a0909, 3px 7px 6px 0px black;
+      }
+      @media screen and (max-width: 425px) {
+        #box {
+          width: 93%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>DIGITAL CLOCK</h1>
+      <div id="box">
+        <div>
+          <p id="hour"></p>
+        </div>
+        <div>:</div>
+        <div>
+          <p id="minutes"></p>
+        </div>
+        <div>:</div>
+        <div>
+          <p id="second"></p>
+        </div>
+        <div>
+          <h4 id="am"></h4>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
